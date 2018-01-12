@@ -39,6 +39,11 @@ Solidity remains a work in progress, so expect many changes ahead. Ethereum illu
         # Returns the last Block in the chain
        pass  }
 ```
+## Technology
+We took an approach that is dynamic, data driven, and interactive. Focuses on the software development issues of integrating multiple languages, assorted data technologies, and Web interaction. Considers AngularJS, Node.js, MongoDB, HTTP, HTML, CSS, JavaScript, AJAX, SQL, and RESTful Web services.
+
+
+
 
 ### Reference
 [Blog](https://hackernoon.com/learn-blockchains-by-building-one-117428612f46) 

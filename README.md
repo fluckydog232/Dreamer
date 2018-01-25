@@ -1,5 +1,9 @@
 #                                     Weaver- *connections made easy*
 ## phase 1 Identity management
+**Profile
+*Moments restricted to same entity
+*Chats available to same group
+
 **The emergence of blockchain owes its birth to Bitcoin** But while Bitcoin centrally focuses on sending and receiving digital currency, our solutions have emerged using blockchain beyond a pure payment system.
 
 Just like Bitcoin, **Weaver** is trustless and uses consensus and miners to add blocks. When a new events is added, it gets added to every user. That's where the similarities largely end. Instead of currency as the end goal, **Weaver** leverages Ethereum which enables peers using a proprietary language called Solidity to write code that is distributed across the EVM and executed under certain conditions.
@@ -7,7 +11,11 @@ Just like Bitcoin, **Weaver** is trustless and uses consensus and miners to add 
 In blockchain parlance, we call this code **smart contracts**. Smart contracts enable distributed applications known as dapps. But why code on a blockchain? Most enterprise class applications rely on expensive and redundant architecture. Everything from identity management to storage must be provided and supported. In addition, several layers of code to ensure security, scalability, and logic create cost and performance overhead.
 
 ## phase 2 Social entity
-The magic with Ethereum is that, when smart contracts are executed, there is a **movement of cryptocurrency**, in this case, ether that acts as a method of payment and authentication. Imagine writing an Ethereum application that enables a person to play a premium-based LinkedIn Learning training video. The code will be executed upon confirmation of ether payment. Because Ethereum uses the same cryptocurrency qualities as Bitcoin, it doesn't require any additional authentication methods, payment gateways, account management, credit cards, or complex forms.
+*SQUARE for news feeds
+**broadcasting 
+**Content generator()
+
+![](http://www.affiliateignition.com/wp-content/uploads/2017/02/Advantages-of-social-networking.jpg)
 
 In this way, a smart contract is more like a commodity. While we're still in the early days of application development, there are a number of ideas being pursued, including a **voting system** called Horizon State, a **predication market** called Augur, a **live broadcasting system** called Livepeer. These few give us a sense of the diversity we can expect in the future.
 
@@ -41,8 +49,14 @@ Solidity remains a work in progress, so expect many changes ahead. Ethereum illu
 ```
 ## Technology
 We took an approach that is dynamic, data driven, and interactive. Focuses on the software development issues of integrating multiple languages, assorted data technologies, and Web interaction. Considers AngularJS, Node.js, MongoDB, HTTP, HTML, CSS, JavaScript, AJAX, SQL, and RESTful Web services.
+**ID managing
+**id.login(serverside)
+**profile(sql)
 
 
+**Ist Message
+*About caching: each channel will form its own database log
+*
 
 
 ### Reference

@@ -1,0 +1,18 @@
+Object:Design an instant messenger for students, faculty and staffs from or related to Northeastern University.
+Why do we do it: to facilitate inter-personal communication between students
+What do we have now?
+Wechat: Chinese-based, faculty and staff don't have wechat, not easy to search and manage conversation, non-school peopel, etc. 
+Slack: seems to be perfect, but hard to enforce everyone to join.
+
+Step 1: Scope the Problem
+- The system support group chat, direct message, broadcast
+- The new user is by invitation or self-registration. Both will need approvement. Account username will be neu email, and everyone will have a basic profile with real name, major, year of enrollment, etc.  
+- The group chat is conversation-based, someone start a thread and others reply to it. 
+- The broadcast is visible to everyone on a separate panel. All emails from administrative staffs will be automatically forward to the broadcast panel. 
+- We can set up notification within the app and via emails, on regular basis or on certain conditions.
+- All files (pic, doc, etc) shared in the group chat or broadcast can be found in a separate section and easily to search by date or name. 
+
+Step 2: Make Reasonable Assumptions
+- Adding or deleting users is relatively unusual
+- There will be peak and low time in terms of the traffic
+-  

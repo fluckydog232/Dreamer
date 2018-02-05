@@ -58,8 +58,8 @@ We took an approach that is dynamic, data driven, and interactive. Focuses on th
 *About caching: each channel will form its own database log
 *
 
-##Members:
-Ted li.haoli@husky.neu.edu
+## Members:
+*Ted  li.haoli@husky.neu.edu there2win*
 
 
 ### Reference

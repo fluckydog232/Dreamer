@@ -58,6 +58,9 @@ We took an approach that is dynamic, data driven, and interactive. Focuses on th
 *About caching: each channel will form its own database log
 *
 
+##Members:
+Ted li.haoli@husky.neu.edu
+
 
 ### Reference
 [Blog](https://hackernoon.com/learn-blockchains-by-building-one-117428612f46) 

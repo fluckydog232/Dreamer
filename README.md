@@ -60,6 +60,8 @@ We took an approach that is dynamic, data driven, and interactive. Focuses on th
 
 ## Members:
 *Ted  li.haoli@husky.neu.edu there2win*
+*Qi Zhang   zhang.q@husky.neu.edu vickyzhang*
+*Jin Niu    niu.jin@husky.neu.edu  jinniu*
 
 
 ### Reference

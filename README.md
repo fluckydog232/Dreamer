@@ -62,7 +62,7 @@ We took an approach that is dynamic, data driven, and interactive. Focuses on th
 *Ted  li.haoli@husky.neu.edu there2win*
 *Qi Zhang   zhang.q@husky.neu.edu vickyzhang*
 *Jin Niu    niu.jin@husky.neu.edu  jinniu*
-*Xing Du    du.xing1@husky.neu.edu xdu2017
+*Xing Du    du.xing1@husky.neu.edu xdu2017*
 
 ### Reference
 [Blog](https://hackernoon.com/learn-blockchains-by-building-one-117428612f46) 

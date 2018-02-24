@@ -1,0 +1,274 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+html, div {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+h1.25 {color: black;
+  font-family: Arial;
+  font-size: 25pt;
+  margin-left: 5%;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+h1.30 {color: black;
+  font-family: Arial;
+  font-size: 30pt;
+  margin-left: 5%;
+  padding-top:10px;
+  padding-bottom:10px;
+
+}
+
+p {color: white}
+
+label.html-text-box {
+  font-size: 20pt;
+  margin-left: 5%;
+}
+
+header.gray{
+  width: 100%;
+  left: 0;
+  right: 0;
+  padding: 1em;
+  color: black;
+  background-color: lightgray;
+  clear: left;
+  text-align: left;
+  margin: 0;
+}
+
+header.blue{
+  width: 100%;
+  left: 0;
+  right: 0;
+  padding: 1em;
+  color: black;
+  background-color: DodgerBlue;
+  clear: left;
+  text-align: left;
+  margin: 0;
+}
+
+header.whitetext{
+  width: 100%;
+  left: 0;
+  right: 0;
+  padding: 1em;
+  color: white;
+  background-color: DodgerBlue;
+  clear: left;
+  text-align: left;
+  margin: 0;
+}
+
+textarea.html-text-box
+{ background-color:ffffff;
+  background-repeat:
+    repeat-y;
+  background-attachment:
+    fixed;border-width:1;
+  border-style:solid;
+  border-color:cccccc;
+  font-family:Arial;
+  font-size:16pt;
+  color:000000;
+  width: 96%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 14px 20px;
+  border-radius: 4px;
+}
+
+input.form-control {
+  background-color:ffffff;
+  background-repeat:
+    repeat-y;
+  background-attachment:
+    fixed;border-width:1;
+  border-style:solid;
+  border-color:cccccc;
+  font-family:Arial;
+  font-size:20pt;
+  color:000000;
+  width: 96%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 14px 20px;
+  border-radius: 4px;
+  height: 50px;
+}
+
+input.html-text-box1
+{ background-color:DodgerBlue;
+  font-family:Arial;
+  font-size:12pt;
+  color:white;
+  width: 96%;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding: 14px 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  vertical-align: middle;}
+
+input.html-text-box2
+{ background-color:Tomato;
+  font-family:Arial;
+  font-size:12pt;
+  color:white;
+  width: 96%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  vertical-align: middle;}
+
+
+div.container {
+  width: 90%;
+  border: none;
+  display: block;
+  margin: 10px;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+div.block {
+  width:50%;
+  float:left;
+  margin: 8px;
+  margin-left: 10%;
+  font-size: 15pt;
+  position:static;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+div.heading{
+  width: 50%;
+  padding: 1em;
+  color: white;
+  background-color: DodgerBlue;
+}
+
+footer.gray {
+  width: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1em;
+  color: white;
+  background-color: lightgray;
+  clear: left;
+  text-align: left;
+  margin: 0;
+}
+
+footer.blue {
+  width: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1em;
+  color: white;
+  background-color: DodgerBlue;
+  clear: left;
+  text-align: left;
+  margin: 0;
+}
+
+.glyphicon.glyphicon-chevron-left {
+  font-size: 30px;
+  border:0;
+  margin-left:2%
+}
+
+.glyphicon.glyphicon-plus.split {
+  font-size: 30px;
+  border:0;
+  margin-right:5%
+}
+
+.glyphicon.glyphicon-plus.full{
+  font-size: 30px;
+  border:0;
+  margin-left:60%
+}
+
+.glyphicon.glyphicon-cog.split {
+  font-size: 20px;
+  margin-left: 90%;
+}
+
+.glyphicon.glyphicon-cog.full {
+  font-size: 30px;
+  margin-left: 90%;
+}
+
+.glyphicon.glyphicon-cog {
+  font-size: 20px;
+  margin-left: 90%;
+}
+
+.glyphicon.glyphicon-user {
+  font-size: 20px;
+  margin-left:90%;
+}
+
+.glyphicon.glyphicon-ok {
+  font-size: 30px;
+  margin-leftt:60%
+}
+
+.glyphicon.glyphicon-plus {
+  font-size: 30px;
+  border:0;
+  margin-left:60%
+}
+
+#parent {
+  display: flex;
+  color: white;
+  background-color: DodgerBlue;
+}
+#left {
+  width: 50%;
+  /* Just so it's visible */
+}
+#right {
+  flex: 1;
+  /* Grow to rest of container */
+  /* Just so it's visible */
+}
+
+#parentbody {
+  display: flex;
+  background-color: white;
+}
+#leftbody {
+  width: 50%;
+  /* Just so it's visible */
+}
+#rightbody {
+  flex: 1;
+  /* Grow to rest of container */
+  /* Just so it's visible */
+}

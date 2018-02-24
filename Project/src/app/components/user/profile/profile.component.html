@@ -1,0 +1,38 @@
+<header class = "blue">
+  <h1 class = "25"> Profile </h1>
+</header>
+<div class = "container">
+  <form method="post" action="">
+    <label for="email" class="html-text-box">Username</label>
+    <input placeholder="xdu2017"
+           type="text"
+           class="form-control"/>
+    <label for="email" class="html-text-box">Email</label>
+    <input placeholder="du.xing1@husky.neu.edu"
+           type="email"
+           class="form-control"/>
+
+    <label for="fname" class="html-text-box">First Name</label>
+    <input placeholder="Xing"
+           type="text"
+           class="form-control"/>
+    <label for="lname" class="html-text-box">Last Name</label>
+    <input placeholder="Du"
+           type="text"
+           class="form-control"/>
+    <p>
+      <a routerLink='/user/:uid/website'>
+        <input type="submit" value="Websites" class="html-text-box1">
+      </a>
+      <a routerLink='/login'>
+        <input type="submit" value="Logout" class="html-text-box2" >
+      </a>
+    </p>
+  </form>
+</div>
+  <footer class = "blue">
+    <a routerLink = '/user/:uid'>
+      <span class="glyphicon glyphicon-user"></span>
+    </a>
+  </footer>
+

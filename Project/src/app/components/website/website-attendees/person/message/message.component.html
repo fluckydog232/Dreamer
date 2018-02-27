@@ -1,0 +1,26 @@
+<header class = "whitetext">
+  <div class = "row">
+    <div class="col-xs-2"></div>
+    <div class="col-xs-8" >
+      <span style="font-size: 25pt">Edit Message</span>
+    </div>
+
+  </div>
+</header>
+
+<div class = "container">
+  <form method="post" action="">
+    <label for="name" class="html-text-box">Title</label>
+    <textarea name="name" placeholder="" cols="25" rows="1" class="html-text-box"></textarea>
+    <label for="description" class="html-text-box">Content</label>
+    <textarea name="description" placeholder="" cols="25" rows="5" class="html-text-box"></textarea>
+    <p>
+      <a routerLink = '/user/:uid/website/att/:pid'>
+        <input type="submit" value="Send" class="html-text-box1">
+      </a>
+      <a routerLink = '/user/:uid/website/att/:pid'>
+        <input type="submit" value="Delete" class="html-text-box2">
+      </a>
+    </p>
+  </form>
+</div>

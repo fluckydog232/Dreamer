@@ -1,8 +1,9 @@
-<header class = "blue">
+<header class = "blue" style="clear:both">
   <h1 class = "25"> Profile </h1>
 </header>
+
 <div class = "container">
-  <form method="post" action="">
+
     <label for="email" class="html-text-box">Username</label>
     <input placeholder="xdu2017"
            type="text"
@@ -20,19 +21,32 @@
     <input placeholder="Du"
            type="text"
            class="form-control"/>
+
+  <label for="password" class="html-text-box">Current Password</label>
+  <input placeholder="Type in previous password before change"
+         type="password"
+         class="form-control"/>
+
+  <label for="password" class="html-text-box">Change Password</label>
+  <input placeholder=""
+         type="password"
+         class="form-control"/>
+
+  <label for="password" class="html-text-box">Confirm Password</label>
+  <input placeholder=""
+         type="password"
+         class="form-control"/>
+
     <p>
       <a routerLink='/user/:uid/website'>
-        <input type="submit" value="Websites" class="html-text-box1">
+        <input type="submit" value="Save" class="html-text-box1">
       </a>
+
       <a routerLink='/login'>
         <input type="submit" value="Logout" class="html-text-box2" >
       </a>
     </p>
-  </form>
+
 </div>
-  <footer class = "blue">
-    <a routerLink = '/user/:uid'>
-      <span class="glyphicon glyphicon-user"></span>
-    </a>
-  </footer>
+
 

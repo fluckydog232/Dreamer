@@ -26,7 +26,7 @@ h1.30 {color: black;
 p {color: white}
 
 label.html-text-box {
-  font-size: 20pt;
+  font-size: 10pt;
   margin-left: 5%;
 }
 
@@ -75,7 +75,7 @@ textarea.html-text-box
   border-style:solid;
   border-color:cccccc;
   font-family:Arial;
-  font-size:16pt;
+  font-size:10pt;
   color:000000;
   width: 96%;
   margin-left: 2%;
@@ -95,7 +95,7 @@ input.form-control {
   border-style:solid;
   border-color:cccccc;
   font-family:Arial;
-  font-size:20pt;
+  font-size:10pt;
   color:000000;
   width: 96%;
   margin-left: 2%;

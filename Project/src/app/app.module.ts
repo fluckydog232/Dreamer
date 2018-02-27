@@ -11,6 +11,8 @@ import { WebsiteListComponent } from './components/website/website-list/website-
 import { WebsiteNewComponent } from './components/website/website-new/website-new.component';
 import { WebsiteAttendeesComponent } from './components/website/website-attendees/website-attendees.component';
 import { PersonComponent } from './components/website/website-attendees/person/person.component';
+//import { MessageComponent } from './components/website/website-attendees/person/message/message.component';
+//import { InboxComponent } from './components/user/profile/inbox/inbox.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { PersonComponent } from './components/website/website-attendees/person/p
     WebsiteListComponent,
     WebsiteNewComponent,
     WebsiteAttendeesComponent,
-    PersonComponent
+    PersonComponent,
+    //MessageComponent,
+    //InboxComponent
   ],
   imports: [
     BrowserModule,

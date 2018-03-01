@@ -1,4 +1,4 @@
-#                                     Weaver- * a event-based social network that connects events and you*
+#                                     Weaver- a event-based social network that connects events and you
 ## Motivation
 * The need to organize events interested/going and participated.
 

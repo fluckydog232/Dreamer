@@ -67,13 +67,11 @@ header.whitetext{
 }
 
 textarea.html-text-box
-{ background-color:ffffff;
-  background-repeat:
-    repeat-y;
-  background-attachment:
-    fixed;border-width:1;
+{
+  background: #ffffff repeat-y fixed;
+  border-width:1;
   border-style:solid;
-  border-color:cccccc;
+  border-color:#cccccc;
   font-family:Arial;
   font-size:10pt;
   color:000000;
@@ -87,13 +85,13 @@ textarea.html-text-box
 }
 
 input.form-control {
-  background-color:ffffff;
+  background-color:#ffffff;
   background-repeat:
     repeat-y;
   background-attachment:
     fixed;border-width:1;
   border-style:solid;
-  border-color:cccccc;
+  border-color:#cccccc;
   font-family:Arial;
   font-size:10pt;
   color:000000;

@@ -1,28 +1,49 @@
+<html>
+  <head>
+    <script>
+      alert("Welcome"+ StudentName);
+      var StudentName =Ted;
+      var arr = [13,36,24,4,25,26]
+      var min =arr[0];
+      var max = arr[0];
+      for(var j=0; j<arr.length;j++)
+      {
+        if(arr[j]>max)
+          max=arr[j];
+        if(arr[j]<min)
+          min=arr[j]
 
-<div class = "container">
+      }
+      alert("Min:"+ min );
+      alert("Max:"+ max );
+    </script>
+  </head>
 
-  <h1 class = "30"> Login </h1>
+  <div class = "container">
+
+    <h1 class = "30"> Login </h1>
 
 
-  <form method="post" action="" >
+    <form method="post" action="" >
 
-    <input placeholder="username"
-           type="text"
-           class="form-control" style="padding-top:10px;padding-bottom:10px; height:50px"/>
+      <input placeholder="username"
+             type="text"
+             class="form-control" style="padding-top:10px;padding-bottom:10px; height:50px"/>
 
-    <input placeholder="password"
-           type="password"
-           class="form-control" style="padding-top:10px;padding-bottom:10px; height: 50px"/>
-    <p>
-      <a routerLink='/user/:uid/website'>
-        <input type="submit" value="Login" class="html-text-box1">
+      <input placeholder="password"
+             type="password"
+             class="form-control" style="padding-top:10px;padding-bottom:10px; height: 50px"/>
+      <p>
+        <a routerLink='/user/:uid/website'>
+          <input type="submit" value="Login" class="html-text-box1">
 
-      </a>
+        </a>
 
-      <a routerLink='/register'>
-        <input type="submit" value="Register" class="html-text-box2">
-      </a>
-    </p>
-  </form>
+        <a routerLink='/register'>
+          <input type="submit" value="Register" class="html-text-box2">
+        </a>
+      </p>
+    </form>
 
-</div>
+  </div>
+</html>

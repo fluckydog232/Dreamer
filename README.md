@@ -11,15 +11,15 @@ Just like Bitcoin, **Weaver** is trustless and uses consensus and miners to add 
 In blockchain parlance, we call this code **smart contracts**. Smart contracts enable distributed applications known as dapps. But why code on a blockchain? Most enterprise class applications rely on expensive and redundant architecture. Everything from identity management to storage must be provided and supported. In addition, several layers of code to ensure security, scalability, and logic create cost and performance overhead.
 
 ## phase 2 Social entity
-*SQUARE for news feeds
-**broadcasting 
-**Content generator()
+**SQUARE for news feeds
+**Broadcasting 
+**Content generator
 
 ![](http://www.affiliateignition.com/wp-content/uploads/2017/02/Advantages-of-social-networking.jpg)
 
 In this way, a smart contract is more like a commodity. While we're still in the early days of application development, there are a number of ideas being pursued, including a **voting system** called Horizon State, a **predication market** called Augur, a **live broadcasting system** called Livepeer. These few give us a sense of the diversity we can expect in the future.
 
-![](https://letstalkpayments.com/wp-content/uploads/2016/03/Authentication.jpg)
+![](https://www.ibm.com/events/shared/img/think/home/think-new-lead.jpg)
 
 ## phase next...
 Solidity remains a work in progress, so expect many changes ahead. Ethereum illustrates the enormous potential of blockchain technology. Rather than a technology limited to digital money, blockchain opens up a completely new way of thinking about developing, deploying, and executing software. While the future path for Ethereum and others is still somewhat unpredictable, the winners that emerge will be the creators of the next generation of the internet.

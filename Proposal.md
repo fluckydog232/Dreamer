@@ -13,3 +13,7 @@ We took the approach that is dynamic, data driven, and interactive. Focuses on t
 Considers AngularJS, Node.js, MongoDB, HTTP, HTML, CSS, JavaScript, AJAX, SQL, and RESTful Web services. 
 
 ## Members:
+* Ted       li.haoli@husky.neu.edu   there2win 
+* Qi Zhang  zhang.q@husky.neu.edu    vickyzhang 
+* Jin Niu   niu.jin@husky.neu.edu    jinniu 
+* Xing Du   du.xing1@husky.neu.edu   xdu2017

@@ -4,6 +4,7 @@ import {Http, RequestOptions, Response} from '@angular/http';
 import {environment} from '../../environments/environment';
 import {Router} from '@angular/router';
 import 'rxjs/add/operator/map';
+import {users} from './user.mock.client';
 
 @Injectable()
 export class UserService {
@@ -13,13 +14,7 @@ export class UserService {
     this.http = http;
   }
 
-  users: User[] = [
-    new User('123', 'xdu2017', 'du.xing1@husky.neu.edu', 'xdu2017', 'Xing', 'Du'),
-    new User('234', 'there2win', 'li.haoli@husky.neu.edu', 'there2win', 'Haolin', 'Li'),
-    new User('345', 'vickyzhang', 'zhang.q@husky.neu.edu', 'vickyzhang', 'Qi', 'Zhang'),
-    new User('456', 'jinniu', 'niu.jin@husky.neu.edu', 'jinniu', 'Jin', 'Niu'),
-  ];
-
+  users: User[] = users;
   api = {
     'findUserByCredentials': this.findUserByCredentials,
     'findUserById': this.findUserById,

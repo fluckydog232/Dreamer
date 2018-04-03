@@ -1,10 +1,10 @@
-
-<div class = "container">
-
-  <h1 class = "30"> Login </h1>
+<html>
 
 
-  <form method="post" action="" >
+  <div class = "container">
+
+    <h1 class = "30"> Login </h1>
+
 
     <input [(ngModel)] = "username"
            name = username
@@ -21,10 +21,11 @@
       <button (click) = "login(username, password)"
               class="html-text-box1"> Login </button>
 
-      <a routerLink='/register'>
-        <input type="submit" value="Register" class="html-text-box2">
-      </a>
-    </p>
-  </form>
+        <a routerLink='/register'>
+          <input type="submit" value="Register" class="html-text-box2">
+        </a>
+      </p>
 
-</div>
+
+  </div>
+</html>

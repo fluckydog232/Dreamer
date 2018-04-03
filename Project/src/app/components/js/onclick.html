@@ -1,0 +1,17 @@
+<h1>On clock Event Handling</h1>
+<script>
+  var messageg="where is it";
+  function sayMessage(message)
+  {
+    var messageg="where is it";
+    alert(message);
+  }
+  function sayInput()
+  {
+    var message =document.getElementById("message").value;
+    alert(message);
+  }
+</script>
+<button onclick="sayMessage(messageg)">say message</button>
+<input id="message" type="text"/>
+<button onclick="sayInput()">say input</button>

@@ -6,56 +6,58 @@
 
     <label class="html-text-box">Username</label>
 
-  <input name = username
+  <input [(ngModel)] = "username"
+         name = username
          value = {{user.username}}
-         #username
+
          placeholder=""
          type="text"
          class="form-control"/>
 
   <label class="html-text-box">Email</label>
-  <input name = email
+  <input [(ngModel)] = "email"
+         name = email
          value = {{user.email}}
-         #email
+
          placeholder=""
          type="email"
          class="form-control"/>
 
   <label class="html-text-box">First Name</label>
-  <input value = {{user.firstName}}
-         #firstName
+  <input [(ngModel)] = "firstName"
+         value = {{user.firstName}}
          placeholder=""
          type="text"
          class="form-control"/>
 
   <label class="html-text-box">Last Name</label>
-  <input value = {{user.lastName}}
-         #lastName
+  <input [(ngModel)] = "lastName"
+         value = {{user.lastName}}
          placeholder=""
          type="text"
          class="form-control"/>
 
   <label class="html-text-box">Current Password</label>
-  <input placeholder="Type in previous password before change"
-         #currentpassword
+  <input [(ngModel)] = "currentpassword"
+         placeholder="Type in previous password before change"
          type="password"
          class="form-control"/>
 
-  <label for="password" class="html-text-box">Change Password</label>
-  <input placeholder=""
-         #newpassword
+  <label class="html-text-box">Change Password</label>
+  <input [(ngModel)] = "newpassword"
+         placeholder=""
          type="password"
          class="form-control"/>
 
-  <label for="password" class="html-text-box">Confirm Password</label>
-  <input placeholder=""
-         #confirmpassword
+  <label class="html-text-box">Confirm Password</label>
+  <input [(ngModel)] = "confirmpassword"
+         placeholder=""
          type="password"
          class="form-control"/>
 
     <p>
-      <button (click) = "updateUser(user, username.value, email.value, firstName.value, lastName.value,
-      currentpassword.value, newpassword.value, confirmpassword.value)"
+      <button (click) = "updateUser(user, username, email, firstName, lastName,
+      currentpassword, newpassword, confirmpassword)"
               class="html-text-box1"> Update </button>
 
       <a routerLink='/user/{{userId}}/website'>

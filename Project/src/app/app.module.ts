@@ -15,6 +15,7 @@ import { PersonComponent } from './components/website/website-attendees/person/p
 import { MessageComponent } from './components/website/website-attendees/person/message/message.component';
 import { InboxComponent } from './components/user/inbox/inbox.component';
 import {UserService} from './services/user.service.client';
+import {WebsiteService} from './services/website.service.client';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import {UserService} from './services/user.service.client';
   ],
   providers: [
     UserService,
+    WebsiteService,
   ],
   bootstrap: [AppComponent]
 })

@@ -1,4 +1,17 @@
-#                                     Weaver- *connections made easy*
+#                                     Weaver: a event-based social network
+## Motivation
+* The need to organize events interested/going and participated.
+
+* The need to connect with those who share your event experience.
+
+* A platform to organize events by users and spread the words.
+
+## By next week, we will
+1) Implement user Authentification (login via Google/Facebook account)
+2) Personalize website contents, organize events by topic and date, provide a drop-down buttom of location  
+3) Configure database schema
+4) Others if brought up
+
 ## phase 1 Identity management
 **Profile
 *Moments restricted to same entity

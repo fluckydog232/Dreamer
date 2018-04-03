@@ -26,14 +26,14 @@ export class ProfileComponent implements OnInit {
 
   updateUser(user: User, username: String, email: String, firstName: String, lastName: String,
              currentpassword: String, newpassword: String, confirmpassword: String) {
-    // this.username = username;
-    // this.currentpassword = currentpassword;
-    if (username.length === 0 || currentpassword.length === 0) {
+    this.username = username;
+    this.currentpassword = currentpassword;
+    if (this.username.length === 0 || this.currentpassword.length === 0) {
       alert('missed information!');
     } else if (!(newpassword === confirmpassword)) {
       alert('password not equal');
     } else {
-       this.userService.updateUser(user, username, email, firstName, lastName,
+      this.userService.updateUser(user, username, email, firstName, lastName,
         currentpassword, newpassword, confirmpassword);
       this.router.navigate(['/user', this.userId]);
     }

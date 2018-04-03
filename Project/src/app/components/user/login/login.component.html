@@ -6,18 +6,20 @@
 
   <form method="post" action="" >
 
-    <input placeholder="username"
+    <input [(ngModel)] = "username"
+           name = username
+           placeholder="username"
            type="text"
            class="form-control" style="padding-top:10px;padding-bottom:10px; height:50px"/>
 
-    <input placeholder="password"
+    <input [(ngModel)] = "password"
+           name = password
+           placeholder="password"
            type="password"
            class="form-control" style="padding-top:10px;padding-bottom:10px; height: 50px"/>
     <p>
-      <a routerLink='/user/:uid/website'>
-        <input type="submit" value="Login" class="html-text-box1">
-
-      </a>
+      <button (click) = "login(username, password)"
+              class="html-text-box1"> Login </button>
 
       <a routerLink='/register'>
         <input type="submit" value="Register" class="html-text-box2">

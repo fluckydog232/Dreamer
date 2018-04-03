@@ -105,6 +105,22 @@ input.form-control {
   height: 50px;
 }
 
+button.html-text-box1
+{ background-color:DodgerBlue;
+  font-family:Arial;
+  font-size:12pt;
+  color:white;
+  width: 96%;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding: 14px 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  vertical-align: middle;}
+
 input.html-text-box1
 { background-color:DodgerBlue;
   font-family:Arial;

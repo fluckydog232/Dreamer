@@ -8,8 +8,6 @@
 
   <input [(ngModel)] = "username"
          name = username
-         value = {{user.username}}
-
          placeholder=""
          type="text"
          class="form-control"/>
@@ -17,22 +15,18 @@
   <label class="html-text-box">Email</label>
   <input [(ngModel)] = "email"
          name = email
-         value = {{user.email}}
-
          placeholder=""
          type="email"
          class="form-control"/>
 
   <label class="html-text-box">First Name</label>
   <input [(ngModel)] = "firstName"
-         value = {{user.firstName}}
          placeholder=""
          type="text"
          class="form-control"/>
 
   <label class="html-text-box">Last Name</label>
   <input [(ngModel)] = "lastName"
-         value = {{user.lastName}}
          placeholder=""
          type="text"
          class="form-control"/>
@@ -56,8 +50,7 @@
          class="form-control"/>
 
     <p>
-      <button (click) = "updateUser(user, username, email, firstName, lastName,
-      currentpassword, newpassword, confirmpassword)"
+      <button (click) = "updateProfile()"
               class="html-text-box1"> Update </button>
 
       <a routerLink='/user/{{userId}}/website'>

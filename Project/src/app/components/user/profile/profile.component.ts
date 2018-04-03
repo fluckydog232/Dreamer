@@ -19,34 +19,70 @@ export class ProfileComponent implements OnInit {
   confirmpassword: String;
   firstName: String;
   lastName: String;
+  errorFlag: Boolean;
+  errorMsg: String;
 
   constructor(private userService: UserService,
               private activatedroute: ActivatedRoute,
               private router: Router) {}
 
-  updateUser(user: User, username: String, email: String, firstName: String, lastName: String,
-             currentpassword: String, newpassword: String, confirmpassword: String) {
-    this.username = username;
-    this.currentpassword = currentpassword;
-    if (this.username.length === 0 || this.currentpassword.length === 0) {
-      alert('missed information!');
-    } else if (!(newpassword === confirmpassword)) {
-      alert('password not equal');
-    } else {
-      this.userService.updateUser(user, username, email, firstName, lastName,
-        currentpassword, newpassword, confirmpassword);
-      this.router.navigate(['/user', this.userId]);
-    }
-  }
-
   ngOnInit() {
     this.activatedroute.params.subscribe(params => {
         this.userId = params['uid'];
-        this.user = this.userService.findUserById(this.userId);
-        console.log('userId: ', this.user._id);
       }
     );
+    this.user = this.userService.findUserById(this.userId);
+    console.log('userId: ', this.user._id);
+    this.username = this.user['username'];
+    this.email = this.user['email'];
+    this.firstName = this.user['firstName'];
+    this.lastName = this.user['lastName'];
+    this.currentpassword = this.user['password'];
+    this.newpassword = '';
+    this.confirmpassword = '';
+    this.errorFlag = false;
+    this.errorMsg = 'Error!';
   }
-}
+    updateProfile() {
+      if (this.username.trim().length > 0 && this.username.indexOf(' ') >= 0) {
+             this.errorFlag = true;
+             this.errorMsg = 'The username cannot include blank space !';
+             return;
+      }
+      if (this.newpassword.trim().length > 0) {
+        if (this.newpassword !== this.confirmpassword) {
+          this.errorFlag = true;
+          this.errorMsg = 'The confirm password does not match !';
+          return;
+        }
+        if (this.newpassword.indexOf(' ') >= 0) {
+          this.errorFlag = true;
+          this.errorMsg = 'The password cannot include blank space !';
+          return;
+        }
+        if (this.newpassword.length < 5) {
+          this.errorFlag = true;
+          this.errorMsg = 'The password must include at least 5 character !';
+          return;
+          }
+      }
+      if (this.newpassword.trim().length === 0 && this.confirmpassword.trim().length > 0) {
+        this.errorFlag = true;
+        this.errorMsg = 'Please enter the new password !';
+        return;
+        }
+        this.errorFlag = false;
+        this.user['username'] = this.username;
+        // this.user['email'] = this.email;
+        this.user['firstName'] = this.firstName;
+        this.user['lastName'] = this.lastName;
+        if (this.newpassword === this.confirmpassword && this.newpassword.length > 6) {
+          this.user['password'] = this.newpassword;
+        }
+        this.userService.updateUser(this.userId, this.user);
+        console.log('user updated username: ', this.user.username);
+        console.log('user updated firstname: ', this.user.firstName);
+    }
+  }
 
 

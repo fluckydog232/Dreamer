@@ -1,14 +1,28 @@
-<html>
+<div class="font-lato">
+  <nav class="navbar navbar-default navbar-fixed-top header">
+    <div class="container-fluid ">
+      <div class="navbar-header">
+        <a routerLink="" class="navbar-brand weaver-size">
+          <img class = "pull-left" id="logo" src="../../../../assets/images/logo.png">Weaver</a>
+      </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a routerLink="/event" class = "glyphicon glyphicon-search search-icon"></a></li>
+          <li><input type = "text"
+                     name = "search"
+                     placeholder=" search event . . . "
+                     class="search-text"></li>
+          <li><a routerLink="/register">Sign Up  <i class="fa fa-user-plus"></i></a></li>
+        </ul>
+      </div>
+  </nav>
+  <div class = "container-center">
 
+    <h2> Login </h2>
 
-  <div class = "container">
-
-    <h1 class = "30"> Login </h1>
-
-
-    <input [(ngModel)] = "username"
-           name = username
-           placeholder="username"
+    <input [(ngModel)] = "email"
+           name = email
+           placeholder="email"
            type="text"
            class="form-control" style="padding-top:10px;padding-bottom:10px; height:50px"/>
 
@@ -17,15 +31,13 @@
            placeholder="password"
            type="password"
            class="form-control" style="padding-top:10px;padding-bottom:10px; height: 50px"/>
-    <p>
-      <button (click) = "login(username, password)"
-              class="html-text-box1"> Login </button>
 
-        <a routerLink='/register'>
-          <input type="submit" value="Register" class="html-text-box2">
-        </a>
-      </p>
+      <button (click) = "login()"
+              class="text-box1"> Login </button>
 
+      <button routerLink='/register'
+              class="text-box2"> Register</button>
 
   </div>
-</html>
+</div>
+

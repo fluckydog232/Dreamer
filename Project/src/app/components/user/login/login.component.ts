@@ -10,16 +10,15 @@ import {User} from '../../../models/user.model.client';
 })
 export class LoginComponent implements OnInit {
 
-  username: String;
-  password: String;
+  email: string;
+  password: string;
 
   constructor(private userService: UserService,
               private router: Router) {}
 
-  login(username: String, password: String) {
-    const user: User = this.userService.findUserByCredentials(username, password);
+  login() {
+    const user: User = this.userService.findUserByCredentials(this.email, this.password);
     if (user) {
-      // console.log('userId: ' + user._id);
       this.router.navigate(['/user', user._id]);
     }
   }

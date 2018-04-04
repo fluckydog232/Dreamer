@@ -1,32 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 
 
-html, div {
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
-h1.25 {color: black;
-  font-family: Arial;
-  font-size: 25pt;
-  margin-left: 5%;
-  padding-top:10px;
-  padding-bottom:10px;
-}
-
-h1.30 {color: black;
-  font-family: Arial;
-  font-size: 30pt;
-  margin-left: 5%;
-  padding-top:10px;
-  padding-bottom:10px;
-
-}
-
-p {color: white}
-
-label.html-text-box {
-  font-size: 10pt;
+.text-label{
+  font-size: 12pt;
   margin-left: 5%;
 }
 
@@ -105,57 +81,42 @@ input.form-control {
   height: 50px;
 }
 
-button.html-text-box1
-{ background-color:DodgerBlue;
+.text-box1
+{ background: darkblue ;
   font-family:Arial;
   font-size:12pt;
   color:white;
-  width: 96%;
-  margin-left: 2%;
-  margin-right: 2%;
+  width: 100%;
   padding: 14px 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border: none;
-  border-radius: 4px;
+  border-radius: 30px;
   cursor: pointer;
-  vertical-align: middle;}
+  margin-top: 30px;}
 
-input.html-text-box1
-{ background-color:DodgerBlue;
+.text-box2
+{ background: crimson ;
   font-family:Arial;
   font-size:12pt;
   color:white;
-  width: 96%;
-  margin-left: 2%;
-  margin-right: 2%;
+  width: 100%;
   padding: 14px 20px;
   margin-top: 10px;
-  margin-bottom: 10px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  vertical-align: middle;}
+  border-radius: 30px;
+  cursor: pointer;}
 
-input.html-text-box2
-{ background-color:Tomato;
+.text-box3
+{ background: darkgreen ;
   font-family:Arial;
   font-size:12pt;
   color:white;
-  width: 96%;
-  margin-left: 2%;
-  margin-right: 2%;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  width: 100%;
   padding: 14px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  vertical-align: middle;}
+  margin-top: 10px;
+  border-radius: 30px;
+  cursor: pointer;}
 
 
 div.container {
-  width: 90%;
+  width: 100%;
   border: none;
   display: block;
   margin: 10px;
@@ -292,7 +253,7 @@ footer.blue {
   height:100%;
 }
 
-#content{
+.content{
   text-align: left;
   padding-top: 15%;
   text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
@@ -306,6 +267,15 @@ footer.blue {
   margin-right: 15px;
 }
 
+.weaver-size{
+  font-size: 1.5em;
+}
+
+.header{
+  height: 55px;
+  font-size: 1.25em;
+}
+
 .bg{
   background: url(http://smartplaces.eu/wordpress/wp-content/uploads/2017/11/FG_7275.jpg) no-repeat;
   height:100vh;
@@ -315,10 +285,18 @@ footer.blue {
   font-family: Lato;
   color:white;
 }
+.font-lato{
+  font-family: Lato;
+}
+
 
 h1{
   font-weight: 700;
   font-size:5em;
+}
+h2{
+  font-weight: 400;
+  font-size: 3em;
 }
 
 hr{
@@ -328,6 +306,40 @@ hr{
 }
 
 .bt{
-  margin-right: 500px;
+  margin-right: 600px;
 }
+.search-icon{
+  margin: 0px 10px 0px 0px;
+  width: 30px;
+}
+.search-text {
+  margin-top: 8px;
+  padding: 5px;
+  margin-left: 1px !important;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  width: 200px;
+  font-size: 14px;
+}
+
+#about, #contact{
+  display: none;
+  padding: 60px 50px 0px 50px;
+  height: 100vh;
+  background-color: rgba(300, 76, 76, 0.3);
+}
+div.container-center {
+  margin: 10% 35% 25% 35%;
+  width: 30%;
+  height: 60%;
+}
+
+div.container-left{
+  margin:10% 10% 25% 10%;
+}
+div.container-right{
+  margin:10% 10% 25% 0%;
+}
+
+
 

@@ -1,3 +1,23 @@
+<div class="font-lato">
+  <nav class="navbar navbar-default navbar-fixed-top header">
+    <div class="container-fluid ">
+      <div class="navbar-header">
+        <a routerLink="" class="navbar-brand weaver-size">
+          <img class = "pull-left" id="logo" src="../../../../assets/images/logo.png">Weaver</a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a routerLink="/event" class = "glyphicon glyphicon-search search-icon"></a></li>
+        <li><input type = "text"
+                   name = "search"
+                   placeholder=" search event . . . "
+                   class="search-text"></li>
+        <li><a (click)="toProfile()">Profile <i class="fa fa-user-circle"></i></a></li>
+        <li><a routerLink="/login">Logout  <i class="fa fa-user"></i></a></li>
+      </ul>
+    </div>
+  </nav>
+
 <header class = "whitetext">
   <div class = "row">
 
@@ -38,13 +58,51 @@
   <h2>Explore Events </h2>
 
   <ul id="myTab" class="nav nav-tabs">
+    <li><a data-toggle="tab" href = "/user/:uid/website/#saved">Saved Events</a></li>
     <li class="active"><a data-toggle="tab" href = "/user/:uid/website/#live">Live Event</a></li>
     <li><a data-toggle="tab" href = "/user/:uid/website/#past">Past Events</a></li>
   </ul>
-  <br>
+
 
 
   <div id="myTabContent" class="tab-content">
+    <div class="tab-pane fade" id="saved">
+      <ul class = "list-group">
+
+        <li class = "list-group-item">
+          <div class = "row">
+            <div class="col-xs-1"></div>
+            <div class="col-xs-6" style="font-size: 15pt">
+              <span> Feb 2018</span>
+            </div>
+          </div>
+        </li>
+
+        <li class = "list-group-item">
+          <div class = "row">
+            <div class="col-xs-1">
+              <a routerLink='/user/:uid/website/att'>
+                Attendees
+              </a>
+            </div>
+            <div class="col-xs-6" style="font-size: 15pt">
+    <span>
+      <a target="_blank" rel="noopener"
+         href="https://www.eventbrite.com/e/career-techup-series-big-data-workshop-tickets-41968869017#">
+        Career TechUP Series: Big Data Workshop</a>
+    </span>
+            </div>
+            <div class="col-xs-2">
+              <span>Saturday, February 3, 2018 from 10:30 AM to 2:30 PM (PST)</span>
+            </div>
+            <div class="col-xs-2">
+              <span>6024 Silver Creek Valley Road, San Jose, CA 95138</span>
+            </div>
+
+          </div>
+        </li>
+      </ul>
+    </div>
     <div class="tab-pane fade in active" id="live">
 
 <ul class = "list-group">
@@ -169,3 +227,5 @@
   </div>
 
 </div>
+</div>
+

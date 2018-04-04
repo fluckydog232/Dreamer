@@ -1,24 +1,69 @@
-<div class = "container">
-  <h1 class = "25">Register </h1>
+<div class="font-lato">
+  <nav class="navbar navbar-default navbar-fixed-top header">
+    <div class="container-fluid ">
+      <div class="navbar-header">
+        <a routerLink="" class="navbar-brand weaver-size">
+          <img class = "pull-left" id="logo" src="../../../../assets/images/logo.png">Weaver</a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a routerLink="/event" class = "glyphicon glyphicon-search search-icon"></a></li>
+        <li><input type = "text"
+                   name = "search"
+                   placeholder=" search event . . . "
+                   class="search-text"></li>
+        <li><a routerLink="/login">Login  <i class="fa fa-user"></i></a></li>
+      </ul>
+    </div>
+  </nav>
 
-  <form method="post" action="">
-    <input placeholder="username"
-           type="data"
+<div class = "container-center">
+  <div *ngIf = "errorFlag"
+       class = "alert alert-danger">
+    {{errorMsg}}
+  </div>
+  <h2>Join us </h2>
+
+  <form (ngSubmit) = "register()" #f="ngForm">
+    <input id="email"
+           name="email"
+           placeholder="email"
+           type="email"
+           ngModel
+           required
+           #email="ngModel"
            class="form-control"/>
-    <input placeholder='password'
+    <span class="help-block" *ngIf="!email.valid && email.touched">
+       Please enter email address!
+  </span>
+    <input id="password"
+           name="password"
+           placeholder='password'
            type="password"
+           ngModel
+           required
+           #password="ngModel"
            class="form-control"/>
-    <input placeholder='verify password'
+    <span class="help-block" *ngIf="!password.valid && password.touched">
+       Please enter password!
+  </span>
+    <input id="verifyPassword"
+           name="verifyPassword"
+           placeholder='verify password'
            type="password"
+           ngModel
+           required
+           #verifyPassword="ngModel"
            class="form-control"/>
-    <p>
-      <a routerLink='/login'>
-        <input type="submit" value="Register" class="html-text-box1">
-      </a>
-      <a routerLink='/login'>
-        <input type="submit" value="Cancel" class="html-text-box2" >
-      </a>
-    </p>
+    <span class="help-block" *ngIf="!verifyPassword.valid && verifyPassword.touched">
+       Please enter verify password!
+  </span>
+    <button (click)="register()"
+            class="text-box1"> Register </button>
+    <button routerLink='/login'
+            class="text-box2"> Cancel</button>
+
   </form>
 
+</div>
 </div>

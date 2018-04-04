@@ -16,11 +16,27 @@ export class UserService {
 
   users: User[] = users;
   api = {
+    'createUser' : this.createUser,
+    'findUserByEmail' : this.findUserByEmail,
     'findUserByCredentials': this.findUserByCredentials,
     'findUserById': this.findUserById,
     'updateUser': this.updateUser,
   };
 
+  createUser(user: any) {
+    const id  = Math.random().toString(36).substr(2, 3);
+    user._id = id;
+    this.users.push(user);
+    return user;
+  }
+
+  findUserByEmail(email: string) {
+    for (let x = 0; x < this.users.length; x++) {
+      if (this.users[x].email === email) {
+        return this.users[x];
+      }
+    }
+  }
   updateUser(userId: String, user: User) {
     for (let x = 0; x < this.users.length; x++) {
       if (this.users[x]._id === userId) {
@@ -33,9 +49,9 @@ export class UserService {
     }
   }
 
-  findUserByCredentials(username: String, password: String) {
+  findUserByCredentials(email: String, password: String) {
     return this.users.find(function (user) {
-      return user.username === username && user.password === password;
+      return user.email === email && user.password === password;
     });
   }
 

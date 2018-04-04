@@ -1,67 +1,86 @@
-<header class = "blue" style="clear:both">
-  <h1 class = "25"> Profile </h1>
-</header>
+<div class="font-lato">
+  <nav class="navbar navbar-default navbar-fixed-top header">
+    <div class="container-fluid ">
+      <div class="navbar-header">
+        <a routerLink="" class="navbar-brand weaver-size">
+          <img class = "pull-left" id="logo" src="../../../../assets/images/logo.png">Weaver</a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a routerLink="/event" class = "glyphicon glyphicon-search search-icon"></a></li>
+        <li><input type = "text"
+                   name = "search"
+                   placeholder=" search event . . . "
+                   class="search-text"></li>
+        <li><a routerLink="/login">Logout  <i class="fa fa-user"></i></a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="container-left">
 
-<div class = "container">
+          <label class="text-label">Username</label>
 
-    <label class="html-text-box">Username</label>
+          <input [(ngModel)] = "username"
+                 name = username
+                 placeholder=""
+                 type="text"
+                 class="form-control"/>
 
-  <input [(ngModel)] = "username"
-         name = username
-         placeholder=""
-         type="text"
-         class="form-control"/>
+          <label class="text-label">Email</label>
+          <input [(ngModel)] = "email"
+                 name = email
+                 placeholder=""
+                 type="email"
+                 class="form-control" disabled />
 
-  <label class="html-text-box">Email</label>
-  <input [(ngModel)] = "email"
-         name = email
-         placeholder=""
-         type="email"
-         class="form-control"/>
+          <label class="text-label">First Name</label>
+          <input [(ngModel)] = "firstName"
+                 placeholder=""
+                 type="text"
+                 class="form-control"/>
 
-  <label class="html-text-box">First Name</label>
-  <input [(ngModel)] = "firstName"
-         placeholder=""
-         type="text"
-         class="form-control"/>
+          <label class="text-label">Last Name</label>
+          <input [(ngModel)] = "lastName"
+                 placeholder=""
+                 type="text"
+                 class="form-control"/>
 
-  <label class="html-text-box">Last Name</label>
-  <input [(ngModel)] = "lastName"
-         placeholder=""
-         type="text"
-         class="form-control"/>
+          <label class="text-label">Current Password</label>
+          <input [(ngModel)] = "currentpassword"
+                 placeholder="Type in previous password before change"
+                 type="password"
+                 class="form-control" disabled/>
+      </div>
+      </div>
 
-  <label class="html-text-box">Current Password</label>
-  <input [(ngModel)] = "currentpassword"
-         placeholder="Type in previous password before change"
-         type="password"
-         class="form-control"/>
+        <div class="col-lg-6">
+           <div class = "container-right">
 
-  <label class="html-text-box">Change Password</label>
-  <input [(ngModel)] = "newpassword"
-         placeholder=""
-         type="password"
-         class="form-control"/>
+             <label class="text-label">Change Password</label>
+             <input [(ngModel)] = "newpassword"
+                    placeholder=""
+                    type="password"
+                    class="form-control"/>
 
-  <label class="html-text-box">Confirm Password</label>
-  <input [(ngModel)] = "confirmpassword"
-         placeholder=""
-         type="password"
-         class="form-control"/>
-
-    <p>
-      <button (click) = "updateProfile()"
-              class="html-text-box1"> Update </button>
-
-      <a routerLink='/user/{{userId}}/website'>
-        <input type="submit" value="Websites" class="html-text-box1">
-      </a>
-
-      <a routerLink='/login'>
-        <input type="submit" value="Logout" class="html-text-box2" >
-      </a>
-    </p>
+             <label class="text-label">Confirm Password</label>
+             <input [(ngModel)] = "confirmpassword"
+                    placeholder=""
+                    type="password"
+                    class="form-control"/>
+             <button (click) = "updateProfile()"
+                     class="text-box1"> Update </button>
+             <button routerLink='/user/{{userId}}/website'
+                     class="text-box3"> My Events
+             </button>
+             <button routerLink='/login'
+                     class="text-box2" > Sign Out</button>
 
 </div>
 
-
+        </div>
+    </div>
+  </div>
+</div>

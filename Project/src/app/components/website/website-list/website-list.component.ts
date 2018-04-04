@@ -11,5 +11,7 @@ export class WebsiteListComponent implements OnInit {
 
   ngOnInit() {
   }
+  toProfile() {
 
+  }
 }

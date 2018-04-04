@@ -16,6 +16,7 @@ import { MessageComponent } from './components/website/website-attendees/person/
 import { InboxComponent } from './components/user/inbox/inbox.component';
 import {UserService} from './services/user.service.client';
 import {WebsiteService} from './services/website.service.client';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import {WebsiteService} from './services/website.service.client';
     PersonComponent,
     MessageComponent,
     InboxComponent,
-    InboxComponent
+    InboxComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

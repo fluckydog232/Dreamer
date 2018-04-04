@@ -73,7 +73,6 @@ export class ProfileComponent implements OnInit {
         }
         this.errorFlag = false;
         this.user['username'] = this.username;
-        // this.user['email'] = this.email;
         this.user['firstName'] = this.firstName;
         this.user['lastName'] = this.lastName;
         if (this.newpassword === this.confirmpassword && this.newpassword.length > 6) {

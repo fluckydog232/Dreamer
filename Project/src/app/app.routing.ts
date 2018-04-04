@@ -10,9 +10,10 @@ import { WebsiteAttendeesComponent } from './components/website/website-attendee
 import { PersonComponent } from './components/website/website-attendees/person/person.component';
 import { MessageComponent } from './components/website/website-attendees/person/message/message.component';
 import { InboxComponent } from './components/user/inbox/inbox.component';
+import {HomeComponent} from "./components/home/home.component";
 
 const APP_ROUTES : Routes = [
-  { path : '', component : LoginComponent},
+  { path : '', component : HomeComponent},
   { path : 'login' , component: LoginComponent},
   { path : 'register' , component:RegisterComponent },
   { path : 'user/:uid' , component: ProfileComponent},

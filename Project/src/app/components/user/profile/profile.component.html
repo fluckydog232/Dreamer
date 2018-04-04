@@ -4,42 +4,57 @@
 
 <div class = "container">
 
-    <label for="email" class="html-text-box">Username</label>
-    <input placeholder="xdu2017"
-           type="text"
-           class="form-control"/>
-    <label for="email" class="html-text-box">Email</label>
-    <input placeholder="du.xing1@husky.neu.edu"
-           type="email"
-           class="form-control"/>
+    <label class="html-text-box">Username</label>
 
-    <label for="fname" class="html-text-box">First Name</label>
-    <input placeholder="Xing"
-           type="text"
-           class="form-control"/>
-    <label for="lname" class="html-text-box">Last Name</label>
-    <input placeholder="Du"
-           type="text"
-           class="form-control"/>
+  <input [(ngModel)] = "username"
+         name = username
+         placeholder=""
+         type="text"
+         class="form-control"/>
 
-  <label for="password" class="html-text-box">Current Password</label>
-  <input placeholder="Type in previous password before change"
+  <label class="html-text-box">Email</label>
+  <input [(ngModel)] = "email"
+         name = email
+         placeholder=""
+         type="email"
+         class="form-control"/>
+
+  <label class="html-text-box">First Name</label>
+  <input [(ngModel)] = "firstName"
+         placeholder=""
+         type="text"
+         class="form-control"/>
+
+  <label class="html-text-box">Last Name</label>
+  <input [(ngModel)] = "lastName"
+         placeholder=""
+         type="text"
+         class="form-control"/>
+
+  <label class="html-text-box">Current Password</label>
+  <input [(ngModel)] = "currentpassword"
+         placeholder="Type in previous password before change"
          type="password"
          class="form-control"/>
 
-  <label for="password" class="html-text-box">Change Password</label>
-  <input placeholder=""
+  <label class="html-text-box">Change Password</label>
+  <input [(ngModel)] = "newpassword"
+         placeholder=""
          type="password"
          class="form-control"/>
 
-  <label for="password" class="html-text-box">Confirm Password</label>
-  <input placeholder=""
+  <label class="html-text-box">Confirm Password</label>
+  <input [(ngModel)] = "confirmpassword"
+         placeholder=""
          type="password"
          class="form-control"/>
 
     <p>
-      <a routerLink='/user/:uid/website'>
-        <input type="submit" value="Save" class="html-text-box1">
+      <button (click) = "updateProfile()"
+              class="html-text-box1"> Update </button>
+
+      <a routerLink='/user/{{userId}}/website'>
+        <input type="submit" value="Websites" class="html-text-box1">
       </a>
 
       <a routerLink='/login'>

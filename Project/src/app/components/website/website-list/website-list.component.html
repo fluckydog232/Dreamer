@@ -17,7 +17,9 @@
       </ul>
     </div>
   </nav>
+
 <div class="topspace">
+
 <header class = "whitetext">
   <div class = "row">
 
@@ -54,179 +56,204 @@
   </div>
 </header>
 
-<div class = "container">
-  <h2>Explore Events </h2>
+  <div class = "container">
+    <h2>Explore Events </h2>
 
-  <ul id="myTab" class="nav nav-tabs">
-    <li><a data-toggle="tab" href = "/user/:uid/website/#saved">Saved Events</a></li>
-    <li class="active"><a data-toggle="tab" href = "/user/:uid/website/#live">Live Event</a></li>
-    <li><a data-toggle="tab" href = "/user/:uid/website/#past">Past Events</a></li>
-  </ul>
+    <ul id="myTab" class="nav nav-tabs">
+      <li class="active"><a data-toggle="tab" href = "/user/:uid/website/#live">Live Event</a></li>
+      <li><a data-toggle="tab" href = "/user/:uid/website/#past">Past Events</a></li>
+      <li><a data-toggle="tab" href = "/user/:uid/website/#saved">Saved Events</a></li>
+      <li><a data-toggle="tab" href = "/user/:uid/website/#going">Going Events</a></li>
+    </ul>
+    <br>
 
 
+    <div id="myTabContent" class="tab-content">
+      <div class="tab-pane fade in active" id="live">
 
-  <div id="myTabContent" class="tab-content">
-    <div class="tab-pane fade" id="saved">
-      <ul *ngFor="let savedwebsite of savedwebsites" class = "list-group">
+        <ul class = "list-group">
 
-        <li class = "list-group-item">
-          <div class = "row">
-            <div class="col-xs-1"></div>
-            <div class="col-xs-6" style="font-size: 15pt">
-              <span> Feb 2018</span>
+          <li class = "list-group-item">
+            <div class = "row">
+              <div class="col-xs-1"></div>
+              <div class="col-xs-6" style="font-size: 15pt">
+                <span> March 2018</span>
+              </div>
             </div>
-          </div>
-        </li>
+          </li>
 
-        <li class = "list-group-item">
-          <div class = "row">
-            <div class="col-xs-1">
-              <a routerLink='/user/:uid/website/att'>
-                Attendees
-              </a>
-            </div>
-            <div class="col-xs-6" style="font-size: 15pt">
-    <span>
-      <a target="_blank" rel="noopener"
-         href={{savedwebsite.url}}>
-        {{savedwebsite.name}}</a>
-    </span>
-            </div>
-            <div class="col-xs-2">
-              <span>{{savedwebsite.date}}</span>
-            </div>
-            <div class="col-xs-2">
-              <span>{{savedwebsite.place}}</span>
-            </div>
+          <li class = "list-group-item">
+            <div class = "row">
 
-          </div>
-        </li>
-      </ul>
-    </div>
-    <div class="tab-pane fade in active" id="live">
+              <div class="col-xs-1">
+                <a routerLink='/user/:uid/website/att'>
+                  Attendees
+                </a>
+              </div>
 
-<ul class = "list-group">
-
-  <li class = "list-group-item">
-    <div class = "row">
-      <div class="col-xs-1"></div>
-      <div class="col-xs-6" style="font-size: 15pt">
-        <span> March 2018</span>
-      </div>
-    </div>
-  </li>
-
-  <li class = "list-group-item">
-    <div class = "row">
-
-    <div class="col-xs-1">
-      <a routerLink='/user/:uid/website/att'>
-      Attendees
-      </a>
-    </div>
-
-    <div class="col-xs-6" style="font-size: 15pt">
+              <div class="col-xs-6" style="font-size: 15pt">
     <span>
       <a target="_blank" rel="noopener"
          href="https://www.eventbrite.com/e/women-who-empower-our-world-tickets-43039762087">
         Women who empower our world</a>
     </span>
-    </div>
+              </div>
 
-    <div class="col-xs-2">
-      <span>Thu, March 8, 2018 6:00 PM – 9:00 PM PST</span>
-    </div>
+              <div class="col-xs-2">
+                <span>Thu, March 8, 2018 6:00 PM – 9:00 PM PST</span>
+              </div>
 
-      <div class="col-xs-2">
-        <span>BELLEVUE ROOM AT THE MARKER, 501 GEARY STREET, SAN FRANCISCO, CA 94102</span>
-      </div>
+              <div class="col-xs-2">
+                <span>BELLEVUE ROOM AT THE MARKER, 501 GEARY STREET, SAN FRANCISCO, CA 94102</span>
+              </div>
 
-      <div class="col-xs-1">
-        <a routerLink="">
-          <span>Share</span>
-        </a>
-      </div>
+              <div class="col-xs-1">
+                <a routerLink="">
+                  <span>Share</span>
+                </a>
+              </div>
 
-    </div>
-  </li>
+            </div>
+          </li>
 
-  <li class = "list-group-item">
-    <div class = "row">
-      <div class="col-xs-1">
-        <a routerLink='/user/:uid/website/att'>
-          Attendees
-        </a>
-      </div>
-      <div class="col-xs-6" style="font-size: 15pt">
+          <li class = "list-group-item">
+            <div class = "row">
+              <div class="col-xs-1">
+                <a routerLink='/user/:uid/website/att'>
+                  Attendees
+                </a>
+              </div>
+              <div class="col-xs-6" style="font-size: 15pt">
     <span>
       <a target="_blank" rel="noopener"
          href="https://www.eventbrite.com/e/webinar-putting-your-life-science-degree-to-work-ii-tickets-43408427776?aff=erelpanelorg">
       Webinar: Putting Your Life Science Degree to Work (II)</a>
     </span>
-      </div>
-      <div class="col-xs-2">
+              </div>
+              <div class="col-xs-2">
         <span>Thu, March 22, 2018
           3:00 PM – 4:00 PM PDT</span>
-      </div>
+              </div>
 
-      <div class="col-xs-2">
-        <span>Online</span>
-      </div>
+              <div class="col-xs-2">
+                <span>Online</span>
+              </div>
 
-      <div class="col-xs-1">
-        <a routerLink="">
-        <span>Share</span>
-        </a>
-      </div>
+              <div class="col-xs-1">
+                <a routerLink="">
+                  <span>Share</span>
+                </a>
+              </div>
 
-    </div>
-  </li>
-
-</ul>
-    </div>
-
-    <div class="tab-pane fade" id="past">
-      <ul class = "list-group">
-
-        <li class = "list-group-item">
-          <div class = "row">
-            <div class="col-xs-1"></div>
-            <div class="col-xs-6" style="font-size: 15pt">
-              <span> Feb 2018</span>
             </div>
-          </div>
-        </li>
+          </li>
 
-        <li class = "list-group-item">
-          <div class = "row">
-            <div class="col-xs-1">
-              <a routerLink='/user/:uid/website/att'>
-                Attendees
-              </a>
+        </ul>
+      </div>
+
+      <div class="tab-pane fade" id="past">
+        <ul class = "list-group">
+
+          <li class = "list-group-item">
+            <div class = "row">
+              <div class="col-xs-1"></div>
+              <div class="col-xs-6" style="font-size: 15pt">
+                <span> Feb 2018</span>
+              </div>
             </div>
-            <div class="col-xs-6" style="font-size: 15pt">
+          </li>
+
+          <li class = "list-group-item">
+            <div class = "row">
+              <div class="col-xs-1">
+                <a routerLink='/user/:uid/website/att'>
+                  Attendees
+                </a>
+              </div>
+              <div class="col-xs-6" style="font-size: 15pt">
     <span>
       <a target="_blank" rel="noopener"
          href="https://www.eventbrite.com/e/career-techup-series-big-data-workshop-tickets-41968869017#">
         Career TechUP Series: Big Data Workshop</a>
     </span>
-            </div>
-            <div class="col-xs-2">
-              <span>Saturday, February 3, 2018 from 10:30 AM to 2:30 PM (PST)</span>
-            </div>
-            <div class="col-xs-2">
-              <span>6024 Silver Creek Valley Road, San Jose, CA 95138</span>
-            </div>
+              </div>
+              <div class="col-xs-2">
+                <span>Saturday, February 3, 2018 from 10:30 AM to 2:30 PM (PST)</span>
+              </div>
+              <div class="col-xs-2">
+                <span>6024 Silver Creek Valley Road, San Jose, CA 95138</span>
+              </div>
 
-          </div>
-        </li>
+            </div>
+          </li>
 
-      </ul>
+        </ul>
+      </div>
+
+      <div class="tab-pane fade" id="saved">
+        <ul *ngFor="let savedwebsite of savedwebsites" class = "list-group">
+
+          <li class = "list-group-item">
+            <div class = "row">
+              <div class="col-xs-1">
+                <a routerLink='/user/:uid/website/att'>
+                  Attendees
+                </a>
+              </div>
+              <div class="col-xs-6" style="font-size: 15pt">
+    <span>
+      <a target="_blank" rel="noopener"
+         href= {{savedwebsite.url}}>
+        {{savedwebsite.name}}</a>
+    </span>
+              </div>
+              <div class="col-xs-2">
+                <span> {{savedwebsite.date}}</span>
+              </div>
+              <div class="col-xs-2">
+                <span>{{savedwebsite.place}}</span>
+              </div>
+
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="tab-pane fade" id="going">
+        <ul *ngFor="let goingwebsite of goingwebsites" class = "list-group">
+
+          <li class = "list-group-item">
+            <div class = "row">
+              <div class="col-xs-1">
+                <a routerLink='/user/:uid/website/att'>
+                  Attendees
+                </a>
+              </div>
+              <div class="col-xs-6" style="font-size: 15pt">
+    <span>
+      <a target="_blank" rel="noopener"
+         href= {{goingwebsite.url}}>
+        {{goingwebsite.name}}</a>
+    </span>
+              </div>
+              <div class="col-xs-2">
+                <span> {{goingwebsite.date}}</span>
+              </div>
+              <div class="col-xs-2">
+                <span>{{goingwebsite.place}}</span>
+              </div>
+
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
     </div>
 
   </div>
 
-</div>
 </div>
 </div>
 

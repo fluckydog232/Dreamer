@@ -36,7 +36,7 @@ export class WebsiteListComponent implements OnInit {
         });
       this.websiteService.findGoingEventsByUser(this.userId).subscribe(goingwebsites => {
         console.log(goingwebsites);
-        // this.goingwebsites = goingwebsites;
+        this.goingwebsites = this.goingwebsites.concat(this.goingwebsites);
       });
       // this.savedwebsites = this.websiteService.findSavedEventsByUser(this.userId);
       // this.goingwebsites = this.websiteService.findGoingEventsByUser(this.userId);

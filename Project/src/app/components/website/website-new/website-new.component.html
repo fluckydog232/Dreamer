@@ -1,33 +1,58 @@
- <header class = "blue">
-    <div class = "row">
-      <div class="col-xs-8" >
-        <span style = "font-size:25pt; margin-left:10%;">New Events</span>
+<div class="font-lato">
+  <nav class="navbar navbar-default navbar-fixed-top header">
+    <div class="container-fluid ">
+      <div class="navbar-header">
+        <a routerLink="" class="navbar-brand weaver-size">
+          <img class = "pull-left" id="logo" src="../../../../assets/images/logo.png">Weaver</a>
       </div>
-      <div class="col-xs-2">
-        <a routerLink = '/user/:uid/website'>
-          <span class="glyphicon glyphicon-ok"></span>
-        </a>
-      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a routerLink="/event" class = "glyphicon glyphicon-search search-icon"></a></li>
+        <li><input type = "text"
+                   name = "search"
+                   placeholder=" search event . . . "
+                   class="search-text"></li>
+        <li><a (click)="toProfile()">Profile <i class="fa fa-user-circle"></i></a></li>
+        <li><a routerLink="/login">Logout  <i class="fa fa-user"></i></a></li>
+      </ul>
     </div>
- </header>
-
-<hr />
-
+  </nav>
+<div class="topspace2">
 <div class = "container">
         <form method="post" action="">
           <label for="name" class="html-text-box">Name</label>
           <textarea name="name" placeholder="" cols="25" rows="1" class="html-text-box"></textarea>
-          <label for="date" class="html-text-box">Date</label>
+          <div class="col-sm-6">
+          <label for="date" class="html-text-box ">Date</label>
           <textarea name="name" placeholder="" cols="25" rows="1" class="html-text-box"></textarea>
+          </div>
+
+          <div class="col-sm-6">
           <label for="place" class="html-text-box">Place</label>
-          <textarea name="name" placeholder="" cols="25" rows="1" class="html-text-box"></textarea>
-          <label for="description" class="html-text-box">Description</label>
+          <br>
+            <div class="dropdown">
+              <button class="btn btn-default dropdown-toggle largeBtn" type="button" data-toggle="dropdown">
+                Select Location<span class="caret"></span>
+                </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">San Jose</a></li>
+                <li><a href="#">Mountain View</a></li>
+                <li><a href="#">Santa Clara</a></li>
+                <li><a href="#">Sunnyvale</a></li>
+                <li><a href="#">Fremont</a></li>
+                <li><a href="#">San Francisco</a></li>
+                <li><a href="#">Others</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <label for="description" class="html-text-box" style="float:left">Description</label>
           <textarea name="email" placeholder="" cols="25" rows="3" class="html-text-box"></textarea>
-        </form>
+          <button routerLink='/user/:uid/website'
+                  class="text-box1"> Add New Events </button>
+    </form>
+  </div>
+
+</div>
 </div>
 
-<footer class = "blue">
-  <a routerLink='/user/:uid'>
-    <span class="glyphicon glyphicon-user"></span>
-  </a>
-</footer>

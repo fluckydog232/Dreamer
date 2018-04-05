@@ -345,5 +345,13 @@ div.topspace {
   margin-top: 50px;
 }
 
+p.pLine1 {
+  font-size: 1.5em;
+  margin-top: 30px;
+}
+p.pLine2 {
+  font-size: 1.2em;
+}
+
 
 

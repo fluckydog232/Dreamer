@@ -357,3 +357,18 @@ p.pLine2 {
   }
 }
 
+/*// mark down*/
+.largeBtn{
+  padding:12px 25px;
+  margin: 14px 15px;
+}
+
+.caret {
+  border-width: 5px;
+  /*border-top:4px;*/
+}
+
+.textPstn{
+  margin:5px;
+}
+

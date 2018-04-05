@@ -12,6 +12,7 @@
                    name = "search"
                    placeholder=" search event . . . "
                    class="search-text"></li>
+        <li><a (click)="toNewEvent()">Create Event <i class="fas fa-plus"></i></a></li>
         <li><a (click)="toProfile()">Profile <i class="fa fa-user-circle"></i></a></li>
         <li><a routerLink="/login">Logout  <i class="fa fa-user"></i></a></li>
       </ul>
@@ -19,43 +20,6 @@
   </nav>
 
 <div class="topspace">
-
-<header class = "whitetext">
-  <div class = "row">
-
-    <div class="col-xs-2">
-      <a routerLink='/user/:uid/website/new'>
-        <span style="color: black; font-size: 15pt">start event</span>
-      </a>
-    </div>
-
-    <div class="col-xs-6" >
-  <span style="font-size: 20pt">
-   NU Weaver : connect events and you
-  </span>
-    </div>
-
-    <div class="col-xs-1">
-      <a routerLink='/user/:uid'>
-        <span style="color: black; font-size: 15pt">Profile</span>
-      </a>
-    </div>
-
-    <div class="col-xs-1">
-      <a routerLink='/inbox'>
-        <span style="color: black; font-size: 15pt">Inbox</span>
-      </a>
-    </div>
-
-    <div class="col-xs-2">
-      <a routerLink='/login'>
-        <span style="color: black; font-size: 15pt">Sign out</span>
-      </a>
-    </div>
-
-  </div>
-</header>
-
   <div class = "container">
     <h2>Explore Events </h2>
 

@@ -4,7 +4,8 @@ import {WebsiteService} from '../../../services/website.service.client';
 import {User} from '../../../models/user.model.client';
 import {Website} from '../../../models/website.model.client';
 import {UserService} from '../../../services/user.service.client';
-import {Observable} from 'rxjs/Observable';
+import {Router} from '@angular/router';
+
 
 @Component({
   selector: 'app-website-list',
@@ -22,10 +23,11 @@ export class WebsiteListComponent implements OnInit {
 
   constructor(private userService: UserService,
               private websiteService: WebsiteService,
-              private router: ActivatedRoute) { }
+              private activeRouter: ActivatedRoute,
+              private router: Router) { }
 
   ngOnInit() {
-    this.router.params.subscribe(params => {
+    this.activeRouter.params.subscribe(params => {
       this.userId = params['uid'];
       this.user = this.userService.findUserById(this.userId);
       console.log('userId: ', this.user._id);
@@ -38,9 +40,14 @@ export class WebsiteListComponent implements OnInit {
         console.log(goingwebsites);
         this.goingwebsites = this.goingwebsites.concat(this.goingwebsites);
       });
-      // this.savedwebsites = this.websiteService.findSavedEventsByUser(this.userId);
-      // this.goingwebsites = this.websiteService.findGoingEventsByUser(this.userId);
     });
   }
+  toNewEvent() {
+    this.router.navigate(['/user/' + this.userId + '/website/new']);
+  }
+  toProfile() {
+    this.router.navigate(['/user/' + this.userId]);
+  }
+
 
 }

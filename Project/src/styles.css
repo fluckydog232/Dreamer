@@ -377,3 +377,16 @@ p.pLine2 {
 }
 
 
+
+#myInput {
+  border-box: box-sizing;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/0d/OOjs_UI_icon_search.svg');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {outline: 3px solid #ddd;}

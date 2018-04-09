@@ -30,25 +30,40 @@
           <div class="col-sm-6">
           <label for="place" class="html-text-box">Place</label>
           <br>
+
             <div class="dropdown">
-              <button class="btn btn-default dropdown-toggle largeBtn" type="button" data-toggle="dropdown">
+              <button (click)="dropdown()"
+                      id = "myDropdown"
+                      class = "dropdown-content"
+                      class="btn btn-default dropdown-toggle largeBtn"
+                      type="button"
+                      data-toggle="dropdown">
                 Select Location<span class="caret"></span>
                 </button>
+
               <ul class="dropdown-menu">
-                <li><a href="#">San Jose</a></li>
-                <li><a href="#">Mountain View</a></li>
-                <li><a href="#">Santa Clara</a></li>
-                <li><a href="#">Sunnyvale</a></li>
-                <li><a href="#">Fremont</a></li>
-                <li><a href="#">San Francisco</a></li>
-                <li><a href="#">Others</a></li>
+
+                <input type="text"
+                       placeholder="Search.."
+                       id="myInput"
+                       onkeyup="filterFunction()">
+                <li><a href="/user/{{userId}}/website/new">San Jose</a></li>
+                <li><a href="/user/{{userId}}/website/new">Mountain View</a></li>
+                <li><a href="/user/{{userId}}/website/new">Santa Clara</a></li>
+                <li><a href="/user/{{userId}}/website/new">Sunnyvale</a></li>
+                <li><a href="/user/{{userId}}/website/new">Fremont</a></li>
+                <li><a href="/user/{{userId}}/website/new">San Francisco</a></li>
+                <li><a href="/user/{{userId}}/website/new">Others</a></li>
+
               </ul>
+
             </div>
+
           </div>
 
           <label for="description" class="html-text-box" style="float:left">Description</label>
           <textarea name="email" placeholder="" cols="25" rows="3" class="html-text-box"></textarea>
-          <button routerLink='/user/:uid/website'
+          <button routerLink='/user/{{userId}}/website'
                   class="text-box1"> Add New Events </button>
     </form>
   </div>
